@@ -1,4 +1,4 @@
-/* OUTLINE ALL ELEMENTS */
+/* OUTLINE ALL ELEMENTS; bug-fixing
 
 * {
     outline: 1px solid red !important;
@@ -10,3 +10,41 @@
      -ms-box-sizing: border-box;
      box-sizing: border-box;
  } 
+
+ */
+
+/* PRIMARY BODY CSS */
+
+ body {
+     width: 100%;
+     background-color: #ef675b;
+     color: white;
+ }
+
+ /* HEADER CONTENT */
+
+ header {
+     background-color: white;
+     width: 100%;
+     height: 75px;
+ }
+
+ .logo {
+    color: #ef675b;
+ }
+
+header ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+ .navItems a {
+    text-decoration: none;
+    color: #ef675b;
+ }
+
+ /* BLOG POST CONTENT */
+
+ #blogPostContainer {
+     margin: 50px 0;
+ }
