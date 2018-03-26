@@ -89,6 +89,10 @@ nav ul li a:hover, .logo a:hover {
      margin: 100px 0;
  }
 
+.blogPost {
+    text-align: center;
+}
+
  .blogCategory {
     text-transform: uppercase;
     font-size: 1.5rem;
