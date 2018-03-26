@@ -116,7 +116,7 @@ footer ul {
 
  /* MOBILE */
 
- @media (max-width: 400px) { /* i.e., if browser window is less than 400px... */
+ @media (max-width: 575px) { /* i.e., if browser window is less than 575px... */
 
     header {
         height: 150px;
@@ -128,11 +128,13 @@ footer ul {
 
     .logo {
         /* centre-align */
+        float: none;
         text-align: center;
     }
 
     nav {
-        /* centre-align */
+        float: none;
+        text-align: center;
     }
 
  }
