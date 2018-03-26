@@ -17,34 +17,124 @@
 
  body {
      width: 100%;
-     background-color: #ef675b;
+     background-color: #eb564e;
      color: white;
+     font-family: Helvetica, sans-serif;
  }
 
  /* HEADER CONTENT */
 
  header {
-     background-color: white;
+     background-color: #f3f3f3;
      width: 100%;
      height: 75px;
+     top: 0px;
  }
 
- .logo {
-    color: #ef675b;
+
+ /* CLEARFIX; nb: negligible? */
+
+ header::after {
+     content: '';
+     display: table;
+     clear: both;
  }
 
-header ul li {
-    list-style-type: none;
-    display: inline;
+.logo {
+    float: left;
+    margin-left: 30px;
+    padding: 18px 0;
 }
 
- .navItems a {
+.logo a {
     text-decoration: none;
-    color: #ef675b;
- }
+    color: #eb564e;
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 25px;
+}
+
+nav ul li a {
+    color: #eb564e;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover, .logo a:hover {
+    color: #eb564e;
+    opacity: 0.5;
+    transition: all ease-in-out 250ms;
+}
 
  /* BLOG POST CONTENT */
 
  #blogPostContainer {
-     margin: 50px 0;
+     margin: 100px 0;
  }
+
+ .blogCategory {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+}
+
+/* FOOTER CONTENT */
+
+footer {
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+ /* OTHER TEXT STYLING */
+
+.thin {
+    font-weight: lighter;
+}
+
+/* MEDIA-QUERIES 
+-------------------------------------------------------------------- */
+
+ /* MOBILE */
+
+ @media (max-width: 400px) { /* i.e., if browser window is less than 400px... */
+
+    header {
+        height: 150px;
+    }
+
+    #blogPostContainer {
+        margin: 40px 0;
+    }
+
+    .logo {
+        /* centre-align */
+        text-align: center;
+    }
+
+    nav {
+        /* centre-align */
+    }
+
+ }
+
+
