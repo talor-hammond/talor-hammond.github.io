@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>HTML, CSS, DOM, pt.1</title>
+    <title>HTML, CSS, DOM, pt. 2</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
@@ -64,12 +64,12 @@
 
                         <h3>Technical</h3>
 
-                        <h1>HTML, CSS, DOM, pt.1</h1>
+                        <h1>HTML, CSS, DOM, pt.2</h1>
 
                         <!-- image? -->
 
                         <h4 class="datePublished">
-                            <em>10 mar 18</em>
+                            <em>15 mar 18</em>
                         </h4>
 
                         <hr>
@@ -85,17 +85,14 @@
 
                 <div class="five columns">
                     <p class="question">
-                        Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?
+                        What is grid based design?
                     </p>
                 </div>
 
                 <div class="seven columns">
                     <p class="answer">
-                        HTML, to me, is the skeleton of the body you are building: it defines what amount of and where the limbs, brain, and vital
-                        organs are.
-                        <br> CSS, is used to define how the body appears; what colour, what length, etc.
-                        <br> DOM, is commonly referred to as a "tree" with multiple branches or layers. The DOM allows us to
-                        interact, modify, and remove elements -- or in this analogy, limbs -- of markup (or body).
+                        Separating a website's design into a series of grids allows us to see how to implement elements -- essentially serve as a
+                                    guide for building a website.
                     </p>
                 </div>
 
@@ -103,44 +100,66 @@
 
             <div class="row">
 
-                <div class="five columns">
-                    <p class="question">
-                        What is meant by boxifying design?
-                    </p>
+                    <div class="five columns">
+                        <p class="question">
+                            Whats all the hype about responsive webpages?
+                        </p>
+                    </div>
+    
+                    <div class="seven columns">
+                        <p class="answer">
+                            Responsive webpages, are webpages that respond to user's behaviour / environment -- such as changing the width of their browser.
+                                    A responsive webpage would respond by dynamically changing all, or chosen elements of
+                                    a webpage to accomodate this.
+                                    <br>
+                                    <br> This idea is commonly supported with the use of "media-queries", saying: if the screen
+                                    size is less than x number of pixels (say, the max-width of a phone's display-resolution),
+                                    the following CSS styles apply.
+                        </p>
+                    </div>
+    
                 </div>
 
-                <div class="seven columns">
-                    <p class="answer">
-                        Given that all HTML elements can be considered as boxes, I think it means to look at elements of design as a series, or array
-                        of boxes. The content of the design is contained within each of these boxes, so it pays to dissect
-                        each section of a design into boxes; and build / form these boxes with your HTML.
-                    </p>
+                <div class="row">
+
+                    <div class="five columns">
+                        <p class="question">
+                            What is semantic structure?
+                        </p>
+                    </div>
+    
+                    <div class="seven columns">
+                        <p class="answer">
+                            Markup "semantic structure", or "semantic structure", is the concept of presenting / laying-out your HTML in a way that makes
+                                    it readable, easy to understand or reference. It's an important habit, and even moreso
+                                    when working in teams.
+                        </p>
+                    </div>
+    
                 </div>
 
-            </div>
+                <div class="row">
 
-            <div class="row">
-
-                <div class="five columns">
-                    <p class="question">
-                        What is the box model?
-                    </p>
+                    <div class="five columns">
+                        <p class="question">
+                            Any other points you found interesting and want to reflect on?
+                        </p>
+                    </div>
+    
+                    <div class="seven columns">
+                        <p class="answer">
+                            Building a webpage with a variety of technologies / frameworks was really interesting -- and it's easy to see why these frameworks
+                                    are used; but with a combination of a framework such as Bootstrap and your own CSS, you
+                                    can add your own personal touch to the design.
+                        </p>
+                    </div>
+    
                 </div>
-
-                <div class="seven columns">
-                    <p class="answer">
-                        As above, All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and
-                        layout. The CSS box model is essentially a box that wraps around every HTML element. It consists
-                        of: margins, borders, padding, and the actual content.
-                    </p>
-                </div>
-
-            </div>
 
         </div>
 
         <!-- FOOTER CONTENT -->
-        <footer>
+    <footer>
 
             <ul>
                 <li>
@@ -154,7 +173,7 @@
                     <a href="https://github.com/talor-hammond" target="_blank">git</a>
                 </li>
             </ul>
-
+    
         </footer>
 
 </body>

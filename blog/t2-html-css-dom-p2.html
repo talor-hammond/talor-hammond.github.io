@@ -7,147 +7,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <title>HTML, CSS, DOM, pt. 2</title>
 
-    <title>HTML, CSS, DOM - pt. 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
 </head>
 
 <body>
 
-
-    <div class="container">
-        <!-- header content -->
-        <header>
-
-            <div class="header">
-
-                <div class="logo mainTitle bold textSpacing">
-                    T.Hammond
-                </div>
-
-                <div class="headerRight otherTabs bold textSpacing">
-                    <a href="../index.html">Home</a>
-                    <a href="#">Blogs</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+    <!-- HEADER CONTENT -->
+    <header>
+        <div class="row">
+            <div class="six columns">
+                <div class="logo">
+                    <a href="../index.html">Talor
+                        <span class="thin">Hammond</span>
+                    </a>
                 </div>
             </div>
 
-        </header>
-
-        <div class="clearFloat">
-            <div class="navigationColumn bold textSpacing">
+            <!-- NAV BAR (<nav> tag added default margin / padding; so keeping concise) -->
+            <div class="six columns">
                 <nav>
                     <ul>
-                        <li class="topBorderShort">Blogs</li>
-
                         <li>
-                            <ul>
-                                <li>Cultural</li>
-
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href="./c1-reflection-blog.html">Reflections</a>
-                                        </li>
-                                        <li>
-                                            <a href="./c1-time-and-habits-blog.html">Time and Habits</a>
-                                        </li>
-                                        <li>
-                                            <a href="./c2-emotional-intelligence.html">Emotional Intelligence</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>Technological</li>
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href="./t2-html-css-dom-p1.html">HTML, CSS, & DOM, pt. 1</a>
-                                        </li>
-                                        <li>
-                                            <a class="activeNav" href="./t2-html-css-dom-p2.html">HTML, CSS, & DOM, pt. 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
+                            <a href="../index.html">Home</a>
                         </li>
-
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Social</a>
+                            <!-- take to bottom of page -->
+                        </li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="blogPostColumn">
-
-                <div class="blogTitleBorder">
-                    <h1 class="setLeft bold">HTML, CSS, & DOM, pt.2, 15mar</h1>
-                </div>
-
-                <div class="clearFloat">
-                    <ul class="blogQuestions">
-                        <li>
-                            <h2>What is grid based design?</h2>
-
-                            <div class="paragraphBorder">
-                                <p>
-                                    Separating a website's design into a series of grids allows us to see how to implement elements -- essentially serve as a
-                                    guide for building a website.
-                                </p>
-                            </div>
-
-                        </li>
-                        <li>
-                            <h2>Whats all the hype about responsive webpages?</h2>
-
-                            <div class="paragraphBorder">
-                                <p>
-                                    Responsive webpages, are webpages that respond to user's behaviour / environment -- such as changing the width of their browser.
-                                    A responsive webpage would respond by dynamically changing all, or chosen elements of
-                                    a webpage to accomodate this.
-                                    <br>
-                                    <br> This idea is commonly supported with the use of "media-queries", saying: if the screen
-                                    size is less than x number of pixels (say, the max-width of a phone's display-resolution),
-                                    the following CSS styles apply.
-                                </p>
-                            </div>
-
-
-                        </li>
-                        <li>
-                            <h2>What is semantic structure?</h2>
-
-                            <div class="paragraphBorder">
-                                <p>
-                                    Markup "semantic structure", or "semantic structure", is the concept of presenting / laying-out your HTML in a way that makes
-                                    it readable, easy to understand or reference. It's an important habit, and even moreso
-                                    when working in teams.
-                                </p>
-                            </div>
-
-                        </li>
-                        <li>
-                            <h2>Any other points you found interesting and want to reflect on.</h2>
-
-                            <div>
-                                <p>
-                                    Building a webpage with a variety of technologies / frameworks was really interesting -- and it's easy to see why these frameworks
-                                    are used; but with a combination of a framework such as Bootstrap and your own CSS, you
-                                    can add your own personal touch to the design.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-    </div>
 
-    <!-- footer content -->
-    <footer>
+    </header>
 
-    </footer>
+    <!-- BLOG POST / ARTICLE CONTENT -->
+
+    <div class="container">
+
+        <div id="blogPostContainer2">
+
+            <!-- BLOG HEADING INFO -->
+            <div class="row">
+
+                <div class="twelve columns">
+                    <div class="blogPostHeading">
+
+                        <h3>Technical</h3>
+
+                        <h1>HTML, CSS, DOM, pt.2</h1>
+
+                        <!-- image? -->
+
+                        <h4 class="datePublished">
+                            <em>15 mar 18</em>
+                        </h4>
+
+                        <hr>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BLOG QUESTIONS & CONTENT (ONE ROW PER QUESTION) -->
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        What is grid based design?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Separating a website's design into a series of grids allows us to see how to implement elements -- essentially serve as a
+                        guide for building a website.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        Whats all the hype about responsive webpages?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Responsive webpages, are webpages that respond to user's behaviour / environment -- such as changing the width of their browser.
+                        A responsive webpage would respond by dynamically changing all, or chosen elements of a webpage to
+                        accomodate this.
+                        <br>
+                        <br> This idea is commonly supported with the use of "media-queries", saying: if the screen size is less
+                        than x number of pixels (say, the max-width of a phone's display-resolution), the following CSS styles
+                        apply.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        What is semantic structure?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Markup "semantic structure", or "semantic structure", is the concept of presenting / laying-out your HTML in a way that makes
+                        it readable, easy to understand or reference. It's an important habit, and even moreso when working
+                        in teams.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        Any other points you found interesting and want to reflect on?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Building a webpage with a variety of technologies / frameworks was really interesting -- and it's easy to see why these frameworks
+                        are used; but with a combination of a framework such as Bootstrap and your own CSS, you can add your
+                        own personal touch to the design.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER CONTENT -->
+        <footer>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100008283584739" target="_blank">fb • </a>
+                </li>
+                <!-- images here? instead of text -->
+                <li>
+                    <a href="https://www.instagram.com/talorh/" target="_blank">ig • </a>
+                </li>
+                <li>
+                    <a href="https://github.com/talor-hammond" target="_blank">git</a>
+                </li>
+            </ul>
+
+        </footer>
 
 </body>
 
