@@ -199,6 +199,20 @@ footer ul li a:hover {
     font-weight: 100;
 }
 
+/* IMAGES */
+
+img {
+    height: auto; 
+    max-width: 40%;
+    margin: 10px 20px;
+    border: 1px solid black;
+}
+
+.wireframes { /* needs revision */
+    justify-content: center;
+    align-items: center;
+}
+
  /* OTHER TEXT STYLING */
 
 .thin {

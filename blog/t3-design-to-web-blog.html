@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>blog title</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER CONTENT -->
+    <header>
+        <div class="row">
+            <div class="six columns">
+                <div class="logo">
+                    <a href="../index.html">Talor
+                        <span class="thin">Hammond</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NAV BAR (<nav> tag added default margin / padding; so keeping concise) -->
+            <div class="six columns">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Social</a>
+                            <!-- take to bottom of page -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- BLOG POST / ARTICLE CONTENT -->
+
+    <div class="container">
+
+        <div id="blogPostContainer2">
+
+            <!-- BLOG HEADING INFO -->
+            <div class="row">
+
+                <div class="twelve columns">
+                    <div class="blogPostHeading">
+
+                        <h3>Technical</h3>
+
+                        <h1>Design to Web</h1>
+
+                        <!-- image? -->
+
+                        <h4 class="datePublished">
+                            <em>28 mar 18</em>
+                        </h4>
+
+                        <hr>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BLOG QUESTIONS & CONTENT (ONE ROW PER QUESTION) -->
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        What is a responsive site? Why is responsiveness important?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        In short, a responsive site -- or responsive web design -- ensures that the website looks good on all devices, i.e. devices
+                        with different screen resolutions / displays.
+                        <br>
+                        <br> It's important as devices all have different screen-sizes, and w responsive web design our sites
+                        can cater towards all of these. Static web design would limit the reach your site would have.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        What is mobile first design? Why is it important?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Mobile first design is one of the strategies used when building a responsive website. It is the idea of building a design
+                        for a mobile-display first, as it is considered the most difficult (compared to building for desktop
+                        / bigger displays). "Once the mobile design questions are answered, designing for other devices will
+                        be easier."
+                        <br>
+                        <br> Mobile first design can significantly cut down the load-time for more graphic / design-intensive
+                        websites.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        What are frameworks? Pros and cons?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Frameworks make our life easier as front-end developers, with preset CSS / styles allowing us to build our grid-based designs
+                        without having to write our own code / structures.
+                        <br>
+                        <br> Frameworks are great for efficiency, and for building prototypes in small amounts of time; allowing
+                        you to build clean and symmetrical layouts. For larger-scale websites, there will generally be limitations
+                        around the framework's core behaviours. i.e., it restricts your freedom as a developer, and forces
+                        you to use the framework's semantics.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        What is a wireframe, and why do we use it?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        A wireframe -- in terms of web design -- is a basic visual representation of elements on a website.
+                        <br>
+                        <br> We use it, as it serves as a blueprint for how our design should look, with the main focus not on
+                        colour or graphics, but functionality, behaviour, and content priority.
+                    </p>
+
+                    <div class="wireframes">
+                        <img src="../images/wireframe-blog-page-desktop.png" alt="">
+                        <img src="../images/wireframe-blog-page-mobile.png" alt="">
+                        <img src="../images/wireframe-index-page-desktop.png" alt="">
+                        <img src="../images/wireframe-index-page-mobile.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- my wireframes... -->
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        Any difficults with implementing your wireframe?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        Ran into a few difficulties, to do with Skeleton's default / core CSS; and building the site for 
+                        mobile / smaller displays and resolutions.
+                        <br><br>
+                        Did some reading through StackOverflow, and visited some YouTube videos before realising it was CSS overwriting 
+                        some of my values -- i.e. I had my media-queries in the wrong position in the heirarchy. Was a good lesson to learn, though.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER CONTENT -->
+        <footer>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100008283584739" target="_blank">fb • </a>
+                </li>
+                <!-- images here? instead of text -->
+                <li>
+                    <a href="https://www.instagram.com/talorh/" target="_blank">ig • </a>
+                </li>
+                <li>
+                    <a href="https://github.com/talor-hammond" target="_blank">git</a>
+                </li>
+            </ul>
+
+        </footer>
+
+</body>
+
+</html>
