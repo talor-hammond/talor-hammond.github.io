@@ -186,7 +186,7 @@ footer ul li a:hover {
 }
 
 .question {
-    font-size: 3.3rem;
+    font-size: 3rem;
 }
 
 .answer {
@@ -206,11 +206,6 @@ img {
     max-width: 40%;
     margin: 10px 20px;
     border: 1px solid black;
-}
-
-.wireframes { /* needs revision */
-    justify-content: center;
-    align-items: center;
 }
 
  /* OTHER TEXT STYLING */
