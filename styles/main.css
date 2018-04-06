@@ -194,6 +194,20 @@ footer ul li a:hover {
     font-weight: 100;
 }
 
+.answerList {
+    font-size: 1.9rem;
+    font-weight: bold;
+    list-style: none;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.answerList li ul li {
+    font-size: 1.9rem;
+    font-weight: 100;
+    list-style: square;
+}
+
 .datePublished {
     font-size: 1.5rem;
     font-weight: 100;
@@ -243,6 +257,10 @@ img {
      }
 
      .answer {
+         font-size: 1.8rem;
+     }
+
+     .answerList {
          font-size: 1.8rem;
      }
 

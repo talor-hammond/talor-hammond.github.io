@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Problem Solving</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER CONTENT -->
+    <header>
+        <div class="row">
+            <div class="six columns">
+                <div class="logo">
+                    <a href="../index.html">Talor
+                        <span class="thin">Hammond</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NAV BAR (<nav> tag added default margin / padding; so keeping concise) -->
+            <div class="six columns">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Social</a>
+                            <!-- take to bottom of page -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- BLOG POST / ARTICLE CONTENT -->
+
+    <div class="container">
+
+        <div id="blogPostContainer2">
+
+            <!-- BLOG HEADING INFO -->
+            <div class="row">
+
+                <div class="twelve columns">
+                    <div class="blogPostHeading">
+
+                        <h3>technical</h3>
+
+                        <h1>Problem Solving</h1>
+
+                        <!-- image? -->
+
+                        <h4 class="datePublished">
+                            <em>7 apr 18</em>
+                        </h4>
+
+                        <hr>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BLOG QUESTIONS & CONTENT (ONE ROW PER QUESTION) -->
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        <!-- question goes here  -->
+                        Tell us a time when you were stuck on a simple problem -- how did you solve it? What did you learn?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        <!-- answer goes here  -->
+                        A few months ago, I was building a simple to-do list app for iOS with Swift, and was having issues getting my program to build, and launch.
+                        <br><br>
+                        After skimming the code end-to-end for a few minutes I went to Google, and found lots of resources available 
+                        for errors with the same error-type, and almost hundreds of responses with possible solutions. It only took a few minutes of 
+                        reading to realise that I hadn't "closed" a bracket involved with a function that was "open", and so the scope of the function was 
+                        much to broad, and took in most of the other content / code / classes that I had written beneath it. As for now, I'm always looking 
+                        to properly indent my code (part of the reason I skimmed over the bracket / didn't make the connection).
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        <!-- question goes here  -->
+                        Reflect on how confident you feel using the problem solving techniques and process:                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        <!-- answer goes here  -->
+                        <ul class="answerList">
+
+                            <li>Pseudocode
+                                <ul>
+                                    <li>
+                                        Pseudocode is something I try to utilise whenever I'm building functions / variables: "if x happens then y should result, changing
+                                         z, etc, etc". I've found it to be super effective to write, in simple terms, what a process should be performing, and then build 
+                                         the code around those descriptions. I generally write this in comments, dictating what I'm trying to do.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Trying something
+                                <ul>
+                                    <li>
+                                        Feel relatively confident trying something, as there's usually no harm in doing so. Will generally 
+                                        move to "Googling" after this method
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Rubber ducky method
+                                <ul>
+                                    <li>
+                                        Have never tried, not sure how I feel speaking to an inanimate object... But I can see how this would help 
+                                        in verbalising what you are trying to do as a developer.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Reading error messages
+                                <ul>
+                                    <li>
+                                        Ran into lots when using Swift & Xcode, made a habit of using debugger, and then googling the error code. 
+                                        Would rinse-and-repeat this process to solve problem.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Console.logging
+                                <ul>
+                                    <li>
+                                        Really useful, always use console.log or any other print method to output what you are trying to define. e.g.,
+                                         would use this when setting var x to make sure I'm grabbing the right content.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Googling
+                                <ul>
+                                    <li>
+                                        Most comfortable port-of-call for me, whenever any of the other methods at hand don't work. Usually directed to 
+                                        StackOverflow, and there's plenty of content with examples, resources, other solutions which are a great way to learn.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Asking peers / coaches
+                                <ul>
+                                    <li>
+                                        Haven't run into major blocks yet, but as I head toward the last few sprints, will definitely 
+                                        look to the code-help-desk for suggestions, help, and solutions.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Improving your process with reflection
+                                <ul>
+                                    <li>
+                                        Definitely make the most of learning-experiences, especially when making mistakes. Fortunate to 
+                                        have made a lot of simple errors early on in programming with Swift, so feel a lot better prepared 
+                                        for JavaScript, and even HTML, and CSS.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER CONTENT -->
+    <footer>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100008283584739" target="_blank">fb • </a>
+                </li>
+                <!-- images here? instead of text -->
+                <li>
+                    <a href="https://www.instagram.com/talorh/" target="_blank">ig • </a>
+                </li>
+                <li>
+                    <a href="https://github.com/talor-hammond" target="_blank">git</a>
+                </li>
+            </ul>
+    
+        </footer>
+
+</body>
+
+</html>
