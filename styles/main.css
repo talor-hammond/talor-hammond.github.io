@@ -194,6 +194,21 @@ footer ul li a:hover {
     font-weight: 100;
 }
 
+.answer a {
+    color: black;
+    text-decoration: underline;
+    transition: ease-in-out .3s;
+}
+
+.answer a:hover {
+    color: #888;
+}
+
+.answerHeading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .answerList {
     font-size: 1.9rem;
     font-weight: bold;
