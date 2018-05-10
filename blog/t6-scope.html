@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Scope</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER CONTENT -->
+    <header>
+        <div class="row">
+            <div class="six columns">
+                <div class="logo">
+                    <a href="../index.html">Talor
+                        <span class="thin">Hammond</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NAV BAR (<nav> tag added default margin / padding; so keeping concise) -->
+            <div class="six columns">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Social</a>
+                            <!-- take to bottom of page -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- BLOG POST / ARTICLE CONTENT -->
+
+    <div class="container">
+
+        <div id="blogPostContainer2">
+
+            <!-- BLOG HEADING INFO -->
+            <div class="row">
+
+                <div class="twelve columns">
+                    <div class="blogPostHeading">
+
+                        <h3>technical</h3>
+
+                        <h1>Scope</h1>
+
+                        <!-- image? -->
+
+                        <h4 class="datePublished">
+                            <em>10 may 18</em>
+                        </h4>
+
+                        <hr>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BLOG QUESTIONS & CONTENT (ONE ROW PER QUESTION) -->
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        <!-- question goes here  -->
+                        What is <em>scope</em>?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        <!-- answer goes here  -->
+                        When trying to describe scope, the most general analogy I can give is how laws are different / applied in 
+                        different countries, regions, or states. For example, laws that are specific only to New Zealand, cannot be applied 
+                        or used as precedence in Zimbabwe.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="five columns">
+                    <p class="question">
+                        <!-- question goes here  -->
+                        How does it work in JavaScript?
+                    </p>
+                </div>
+
+                <div class="seven columns">
+                    <p class="answer">
+                        <!-- answer goes here  -->
+                        Scope has the same effect in JavaScript: when variables are defined outside of the "scope" of a function, their scope can 
+                        be seen as <em>global</em> -- i.e., has effect throughout the entire program.
+                        <br><br>
+                        Conversely, when variables are defined within a function's "scope", their presence only has effects locally -- i.e. within the function.
+                        <br><br>
+                        Personally, when building the calculator for this sprint's project, I forgot to update the value of a global variable with a certain function's 
+                        results -- meaning that whenever the global variable was called for reference later, it was the same as it was defined originally. This basically 
+                        rendered the method's functionality useless.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER CONTENT -->
+    <footer>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100008283584739" target="_blank">fb • </a>
+                </li>
+                <!-- images here? instead of text -->
+                <li>
+                    <a href="https://www.instagram.com/talorh/" target="_blank">ig • </a>
+                </li>
+                <li>
+                    <a href="https://github.com/talor-hammond" target="_blank">git</a>
+                </li>
+            </ul>
+    
+        </footer>
+
+</body>
+
+</html>
