@@ -86,6 +86,42 @@ nav ul li a:hover, .logo a:hover {
     transition: all ease-in-out 250ms;
 }
 
+/* CALCULATOR CONTENT */
+.calculatorHeading {
+    margin-top: 70px;
+    font-weight: 100;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.calculatorColumnOne {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.calculatorColumnTwo {
+    text-align: center;
+    margin-top: 0px;
+}
+
+label[for=correctionFactor] a {
+    text-decoration: none;
+    color: black;
+    transition: all linear .25s;
+}
+
+label[for=correctionFactor] a:hover {
+    color: #999;
+}
+
+.results {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.33);
+    padding-bottom: 5px;
+}
+
  /* BLOG POST CONTENT */
 
  #blogPostContainer {
@@ -140,6 +176,7 @@ hr {
 footer {
     width: 100%;
     text-align: center;
+    position: relative;
     bottom: 0;
 }
 

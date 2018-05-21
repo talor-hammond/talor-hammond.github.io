@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Insulin Calculator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER CONTENT -->
+    <header>
+        <div class="row">
+            <div class="six columns">
+                <div class="logo">
+                    <a href="../index.html">Talor
+                        <span class="thin">Hammond</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NAV BAR (<nav> tag added default margin / padding; so keeping concise) -->
+            <div class="six columns">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Social</a>
+                            <!-- take to bottom of page -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- CALCULATOR CONTENT -->
+        <!-- FIRST ROW -->
+        <div class="row">
+
+            <!-- HEADING -->
+            <div class="twelve columns calculatorColumnOne">
+
+                <h2 class="calculatorHeading">Insulin & Blood-glucose calculator</h2>
+
+                <h3 class="subtitle">For correction</h3>
+
+                <!-- TODO: have a dropdown bar / box with disclaimers here -->
+
+                <form>
+
+                    <!-- current blood glucose -->
+                    <label for="currentBloodGlucose">Current Blood-glucose, mmol/L</label>
+                    <input type="text" id="currentBG">
+
+                    <!-- goal blood glucose -->
+                    <label for="goalBloodGlucose">Goal Blood-glucose, mmol/L</label>
+                    <input type="text" id="goalBG">
+
+                    <!-- correction factor -->
+                    <label for="correctionFactor">
+                        <a href="http://blog.joslin.org/2013/10/adjusting-your-correction-factor-2/" target="_blank">Correction Factor, per unit</a>
+                    </label>
+                    <input type="text" id="correction">
+
+                    <!-- button -->
+                    <br>
+                    <button type="text" onclick="calculateCorrection">Calculate</button>
+
+                </form>
+
+                <p class="results">Results:
+                    <span id="firstResults"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- SECOND ROW -->
+        <div class="row">
+
+            <!-- HEADING -->
+            <div class="twelve columns calculatorColumnTwo">
+
+                <h3 class="subtitle">Before you eat</h3>
+
+                <form>
+
+                    <!-- CARBS -->
+                    <label for="carbs">Carbohydrates, g</label>
+                    <input type="text" id="carbohydrates">
+
+                    <!-- Carb / insulin ratio -->
+                    <label for="ratio">Carb ratio, per unit</label>
+                    <input type="text" id="carbRatio">
+
+                    <!-- button -->
+                    <br>
+                    <button type="text" onclick="calculateInsulin">Calculate</button>
+
+                </form>
+
+                <p class="results">Results:
+                    <span id="secondResults"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER CONTENT -->
+    <footer>
+
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100008283584739" target="_blank">fb • </a>
+            </li>
+            <!-- images here? instead of text -->
+            <li>
+                <a href="https://www.instagram.com/talorh/" target="_blank">ig • </a>
+            </li>
+            <li>
+                <a href="https://github.com/talor-hammond" target="_blank">git</a>
+            </li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
