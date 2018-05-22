@@ -26,17 +26,17 @@ function calculateCorrection() {
     // 1. IF ANY OF THE VALUES ARE AN EMPTY STRING...
     if ((currentGlucose || goalGlucose || correctionFactor) == '') {
 
-        results.innerHTML = '<i>Please enter three valid numbers :~)</i>'
+        results.innerHTML = '<i>Please enter three valid numbers</i> 😕'
     
     // 2. IF ANY OF THE VALUES AREN'T AN EMPTY STRING, AND ANY OF WHICH ARE INVALID NUMBERS...
     } else if ((currentGlucose.length || goalGlucose.length || correctionFactor.length) > 0 && isNaN(Number(currentGlucose)) || isNaN(Number(goalGlucose)) || isNaN(Number(correctionFactor)) == true)  {
 
-        results.innerHTML = '<i>Please enter three valid numbers :~)</i>'
+        results.innerHTML = '<i>Please enter three valid numbers</i> 😕'
 
     // 3. IF THE CORRECTION FACTOR IS INVALID; WHERE IT WOULD GIVE INFINITY UNITS
     } else if (correctionFactorNumber == 0) {
 
-        results.innerHTML = '<i>Please enter a valid correction factor!</i>'
+        results.innerHTML = '<i>Please enter a valid correction factor</i> 😕'
 
     // 4. ELSE, CALCULATE THE NUMBERS:
     } else {
@@ -45,9 +45,9 @@ function calculateCorrection() {
         var units = Math.floor((currentGlucoseNumber - goalGlucoseNumber) / correctionFactorNumber);
 
         if (units == 1) { // for an individual unit:
-            results.innerHTML = '<b>Take ' + units + ' unit :~)</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';            
+            results.innerHTML = '<b>Take ' + units + ' unit 💉😊</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';            
         } else {
-            results.innerHTML = '<b>Take ' + units + ' units :~)</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';
+            results.innerHTML = '<b>Take ' + units + ' units 💉😊</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';
         }
     }
 }
@@ -69,17 +69,17 @@ function calculateInsulin() {
     // 1. IF ANY OF THE VALUES ARE AN EMPTY STRING...
     if ((carbs || carbRatio) == '') {
 
-        results.innerHTML = '<i>Please enter two valid numbers :~)</i>'
+        results.innerHTML = '<i>Please enter two valid numbers</i> 😕'
     
     // 2. IF ANY OF THE VALUES AREN'T AN EMPTY STRING, AND ANY OF WHICH ARE INVALID NUMBERS...
     } else if ((carbs.length || carbRatio.length) > 0 && isNaN(carbRatioNumber) || isNaN(carbsNumber) == true)  {
 
-        results.innerHTML = '<i>Please enter two valid numbers :~)</i>'
+        results.innerHTML = '<i>Please enter two valid numbers</i> 😕'
 
     // 3. IF THE RATIO IS 0; WHERE IT WOULD GIVE INFINITY UNITS
     } else if (carbRatioNumber == 0) {
 
-        results.innerHTML = '<i>Please enter a valid ratio :~)</i>'
+        results.innerHTML = '<i>Please enter a valid ratio</i> 😕'
 
     // 4. ELSE, CALCULATE THE NUMBERS:
     } else {
@@ -88,9 +88,9 @@ function calculateInsulin() {
         var units = Math.floor(carbsNumber / carbRatioNumber);
 
         if (units == 1) { // for an individual unit:
-            results.innerHTML = '<b>Take ' + units + ' unit :~)</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';            
+            results.innerHTML = '<b>Take ' + units + ' unit 💉😊</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';            
         } else {
-            results.innerHTML = '<b>Take ' + units + ' units :~)</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';
+            results.innerHTML = '<b>Take ' + units + ' units 💉😊</b><br><br>All results are rounded <i>down</i> to the nearest whole number.';
         }
     }
     
