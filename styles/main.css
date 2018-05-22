@@ -116,11 +116,10 @@ label[for=correctionFactor] a:hover {
     color: #999;
 }
 
-.results {
+/* .results {
     font-weight: bold;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.33);
-    padding-bottom: 5px;
-}
+    visibility: hidden;
+} */
 
  /* BLOG POST CONTENT */
 
